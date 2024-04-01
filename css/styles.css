@@ -63,7 +63,7 @@ p {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top:0;
     left: 0;
     width: 100%;
@@ -74,6 +74,7 @@ p {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 
 img {
     display: block;
@@ -106,6 +107,7 @@ img {
         padding-top: 16px;
         padding-bottom: 16px;
     }
+
 
 
 
@@ -227,6 +229,7 @@ img {
     color: #404BBF;
 
 }
+
 .burger-contacts-link test{
     display: block;
     margin-bottom: 24px;
@@ -254,6 +257,10 @@ font-style: normal;
 .burger-contacts-link:focus {
     color: #404BBF;
 
+}
+.active-bur-menu {
+    /* position: relative; */
+    color: #404bbf;
 }
     .mob-soc-list {
     display: flex;
@@ -421,7 +428,7 @@ font-style: normal;
 /*-------our-team----------*/
 .our-team {
     background-color: #F4F4FD;
-    padding: 96px 10px;
+    padding: 96px 0;
 }
 
 .our-team-title {
@@ -643,6 +650,9 @@ font-style: normal;
     padding-top: 96px;
     padding-bottom: 96px;
 }
+.footer-block{
+    margin-bottom: 72px;
+}
 
 .footer-logo {
     font-family: 'Raleway', sans-serif;
@@ -675,7 +685,7 @@ font-style: normal;
     color: #FFFFFF;
     text-align: start;
     /* max-width: 264px; */
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 
 }
 
@@ -1158,8 +1168,6 @@ margin-bottom: 24px;
 /* ---------opportunities--------- */
     .opportunities-list {
         flex-direction: row;
-        padding-top: 96px;
-        padding-bottom: 96px;
         gap: 72px 24px;
     }
 
@@ -1198,11 +1206,15 @@ margin-bottom: 24px;
                 justify-content: start;
                 align-items: start;
                 gap: 24px;
+                margin-bottom: 72px;
             }
 
             .footer-block>.footer-logo{
                 display: flex;
                 justify-content: start;
+            }
+            .footer-block{
+                margin-bottom: 0;
             }
             .footer-text{
                 max-width: 264px;
@@ -1239,6 +1251,10 @@ margin-bottom: 24px;
         .footer .container{
             width: 1158px;
         }
+        .section{
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
 
 /* ---------Header---------------- */
 .header-contacts{
@@ -1267,7 +1283,7 @@ margin-bottom: 24px;
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1backgroun-image_2x_desc.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officeimage_2x_desc.jpg);
     }
 }
 .hero-title{
@@ -1367,7 +1383,10 @@ margin-bottom: 24px;
     justify-content: start;
     flex-wrap: nowrap;
 }
-
+.footer-wrap{
+    gap:  0 ;
+    margin-bottom: 0;
+}
 
 .footer-block {
     margin-right: 120px;
@@ -1375,7 +1394,7 @@ margin-bottom: 24px;
 
 .footer-text {
     font-weight: 500;
-    margin-bottom: 0;
+
     max-width: 264px;
 }
 
@@ -1383,6 +1402,6 @@ margin-bottom: 24px;
     margin-right: 80px;
 }
 .social-items-list{
-    margin-bottom: 0;
+
 }
 }
